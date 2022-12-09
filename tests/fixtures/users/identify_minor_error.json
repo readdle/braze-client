@@ -1,0 +1,11 @@
+{
+  "users": [],
+  "message": "success",
+  "errors": [
+    {
+      "type": "'alias_name' must be a String",
+      "input_array": "user_aliases",
+      "index": 0
+    }
+  ]
+}

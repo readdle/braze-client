@@ -1,0 +1,7 @@
+vendor
+examples-local
+.idea
+.git
+.DS_Store
+composer.phar
+composer.lock

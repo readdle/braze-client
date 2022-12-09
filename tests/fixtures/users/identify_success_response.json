@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "created_at": "2022-12-12T13:48:58.493Z",
+      "user_aliases": [
+        {
+          "alias_name": "b-2222",
+          "alias_label": "AppStore"
+        }
+      ],
+      "appboy_id": "123",
+      "braze_id": "123",
+      "random_bucket": 4184,
+      "custom_events": [
+        {
+          "name": "Purchase",
+          "first": "2022-12-12T13:48:58.000Z",
+          "last": "2022-12-12T13:48:58.000Z",
+          "count": 1
+        }
+      ],
+      "total_revenue": 0.0,
+      "push_subscribe": "subscribed",
+      "email_subscribe": "subscribed"
+    }
+  ],
+  "message": "success"
+}
