@@ -40,10 +40,18 @@ class Users extends BaseEndpoint
     }
 
     /**
-     * https://www.braze.com/docs/api/endpoints/user_data/post_user_delete/
+     * @link https://www.braze.com/docs/api/endpoints/user_data/post_user_delete/
      */
     public function delete(array $payload): Response
     {
         return $this->request('/users/delete', 'POST', $payload);
+    }
+
+    /**
+     * @link https://www.braze.com/docs/api/endpoints/user_data/post_users_merge/
+     */
+    public function merge(array $payload): Response
+    {
+        return $this->request('/users/merge', 'POST', $payload);
     }
 }
