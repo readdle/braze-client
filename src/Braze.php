@@ -55,12 +55,12 @@ class Braze
         return $this->init(Users::class);
     }
 
-    public function messages(): Users
+    public function messages(): Messages
     {
         return $this->init(Messages::class);
     }
 
-    public function campaigns(): Users
+    public function campaigns(): Campaigns
     {
         return $this->init(Campaigns::class);
     }
