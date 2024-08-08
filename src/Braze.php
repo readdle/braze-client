@@ -8,6 +8,8 @@ use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Message;
 use Readdle\BrazeClient\Endpoint\BaseEndpoint;
+use Readdle\BrazeClient\Endpoint\Campaigns;
+use Readdle\BrazeClient\Endpoint\Messages;
 use Readdle\BrazeClient\Endpoint\Users;
 use Readdle\BrazeClient\Exception\BadRequestException;
 use Readdle\BrazeClient\Exception\BrazeException;
@@ -51,6 +53,16 @@ class Braze
     public function users(): Users
     {
         return $this->init(Users::class);
+    }
+
+    public function messages(): Messages
+    {
+        return $this->init(Messages::class);
+    }
+
+    public function campaigns(): Campaigns
+    {
+        return $this->init(Campaigns::class);
     }
 
     /**

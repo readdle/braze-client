@@ -3,7 +3,7 @@
   "description": "Simple client for interacting with Braze API",
   "type": "library",
   "license": "MIT",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "php": ">=8.0",
   "autoload": {
     "psr-4": {
