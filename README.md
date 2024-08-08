@@ -27,3 +27,8 @@ This is simple library for Braze REST API.
 
 - [x] **POST** `/messages/send`
     - [Braze API - Send Messages](https://www.braze.com/docs/api/endpoints/messaging/send_messages/post_send_messages)
+
+### Campaigns
+
+- [x] **POST** `/campaigns/trigger/send`
+  - [Braze API - Send campaign messages](https://www.braze.com/docs/api/endpoints/messaging/send_messages/post_send_triggered_campaigns)
