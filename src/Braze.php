@@ -14,6 +14,7 @@ use Readdle\BrazeClient\Endpoint\Users;
 use Readdle\BrazeClient\Exception\BadRequestException;
 use Readdle\BrazeClient\Exception\BrazeException;
 use Readdle\BrazeClient\Exception\RateLimitException;
+use stdClass;
 
 class Braze
 {
@@ -68,7 +69,7 @@ class Braze
     /**
      * @param string $path
      * @param string $method
-     * @param array $payload
+     * @param array|stdClass $payload
      *
      * @throws BadRequestException
      * @throws RateLimitException
@@ -76,7 +77,7 @@ class Braze
      *
      * @return Response
      */
-    public function executeAPIRequest(string $path, string $method, array $payload = []): Response
+    public function executeAPIRequest(string $path, string $method, array|stdClass $payload = []): Response
     {
         $options = [
             'headers' => [
