@@ -16,7 +16,7 @@ abstract class BaseEndpoint
         $this->braze = $braze;
     }
 
-    protected function request(string $path, string $method, array|stdClass $payload = []): Response
+    protected function request(string $path, string $method, array|stdClass|null $payload = null): Response
     {
         return $this->braze->executeAPIRequest($path, $method, $payload);
     }

@@ -77,7 +77,7 @@ class Braze
      *
      * @return Response
      */
-    public function executeAPIRequest(string $path, string $method, array|stdClass $payload = []): Response
+    public function executeAPIRequest(string $path, string $method, array|stdClass|null $payload = null): Response
     {
         $options = [
             'headers' => [
