@@ -44,7 +44,7 @@ class Braze
     public function __construct(
         string $apiKey,
         string $endpoint = self::EU01,
-        Client $client = null
+        ?Client $client = null
     ) {
         $this->apiKey = $apiKey;
         $this->baseUrl = $endpoint;
