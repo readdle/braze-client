@@ -3,7 +3,7 @@
   "description": "Simple client for interacting with Braze API",
   "type": "library",
   "license": "MIT",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "php": ">=8.0",
   "autoload": {
     "psr-4": {
@@ -17,7 +17,7 @@
   },
   "require": {
     "ext-json": "*",
-    "guzzlehttp/guzzle": "^7.5"
+    "guzzlehttp/guzzle": "^8.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^9"
